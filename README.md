@@ -14,10 +14,23 @@ Quiero convertir un Json en una lista de personas que tiene atributos como nombr
 ## Explicacion
 La "magia" principal se encuentra en esta parte 
 ```csharp
-    List<Persona> listaPersonas = JsonConvert.DeserializeObject<JObject>(json).Value<JArray>("personas").ToObject<List<Persona>>();
+List<Persona> listaPersonas = JsonConvert.DeserializeObject<JObject>(json).Value<JArray>("personas").ToObject<List<Persona>>();
 ```
-- DeserializeObject<JObject>(json) indica que quiero convertir el Json al tipo JObject para poder manipularlo con la propia libreria
-- Value<JArray>("personas") indica que quiero convertir especificamente a un JArray lo que se encuentre bajo la key "personas" que segun mi modelo es un Array de Json justamente.
-- ToObject<List<Persona>>() india que quiero convertir a ese Array a una lista compuesta de objetos Persona
+en donde...
 
+```csharp
+DeserializeObject<JObject>(json)
+// Indica que quiero convertir el Json al tipo JObject para poder manipularlo con la propia libreria
+```
+
+```csharp
+Value<JArray>("personas")
+// Indica que quiero convertir especificamente a un JArray lo que se encuentre bajo la key "personas" 
+// que segun mi modelo es un Array de Json justamente. 
+```
+
+```csharp    
+ToObject<List<Persona>>()
+// Indica que quiero convertir a ese Array a una lista compuesta de objetos Persona
+```
 
