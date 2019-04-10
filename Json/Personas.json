@@ -1,0 +1,40 @@
+﻿{
+  "personas": [
+    {
+      "nombre": "Juan",
+      "apellido": "Martinez",
+      "edad": 31,
+      "altura": 1.89,
+      "peso": 60.9,
+      "direccion": {
+        "localidad": "Falsa",
+        "calle": "Falsa",
+        "numero": 123
+      }
+    },
+    {
+      "nombre": "Marta",
+      "apellido": "Suipacha",
+      "edad": 27,
+      "altura": 1.79,
+      "peso": 67.8,
+      "direccion": {
+        "localidad": "Liniers",
+        "calle": "Uriburu",
+        "numero": 440
+      }
+    },
+    {
+      "nombre": "Ernesto",
+      "apellido": "Alvarez",
+      "edad": 70,
+      "altura": 1.78,
+      "peso": 80,
+      "direccion": {
+        "localidad": "Lomas",
+        "calle": "Meeks",
+        "numero": 3019
+      }
+    }
+  ]
+}
