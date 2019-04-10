@@ -8,6 +8,7 @@ Como parsear un Json con .NET
 Quiero convertir un Json en una lista de personas que tiene atributos como nombre, peso, entre otros y una direccion, siendo Persona y Direccion clases de mi dominio.
 
 ## Aclaraciones
+- El archivo de ejemplo a parsear se encuentra dentro de la carpeta del proyecto bajo el nombre de "Personas.json"
 - Se uso una clase estatica intermedia/adaptadora llamada Parser ya que segun el POO si un dia queremos usar otra tecnologia/modulo distinto como parser el resto del programa no se tendria que enterar de este cambio (ver principios SOLID)
 - No se catchearon errores en ningun momento para denotar que .NET no te obliga a hacerlo (a diferencia de Java)
 
